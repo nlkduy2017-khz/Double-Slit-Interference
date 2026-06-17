@@ -1,0 +1,37 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Thông số
+wavelength = 700e-9   # bước sóng 500nm (ánh sáng xanh lá)
+d = 0.5e-3            # khoảng cách 2 khe: 0.1mm
+L = 2.0               # khoảng cách từ khe đến màn: 1m
+
+# Màn hình
+y = np.linspace(-0.01, 0.01, 1000)  # từ -1cm đến 1cm
+
+# Tính cường độ giao thoa
+delta = d * y / L                    # hiệu đường đi
+I = (np.cos(np.pi * delta / wavelength)) ** 2  # cường độ
+
+# Vẽ
+plt.figure(figsize=(10, 5))
+
+# Đồ thị cường độ
+plt.subplot(1, 2, 1)
+plt.plot(I, y * 1000, color='blue')
+plt.xlabel("Cường độ")
+plt.ylabel("Vị trí trên màn (mm)")
+plt.title("Cường độ giao thoa")
+plt.grid(True)
+
+# Hình ảnh vân sáng tối
+plt.subplot(1, 2, 2)
+I_2d = np.outer(I, np.ones(100))
+plt.imshow(I_2d, extent=[0, 1, -10, 10], cmap='Blues', aspect='auto')
+plt.xlabel("Chiều ngang")
+plt.ylabel("Vị trí trên màn (mm)")
+plt.title("Vân giao thoa (khe Young)")
+plt.colorbar(label="Cường độ")
+
+plt.tight_layout()
+plt.show()
