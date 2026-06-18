@@ -12,19 +12,23 @@ When monochromatic light passes through two narrow slits, the waves emitted by e
 
 The intensity distribution can be described by:
 
-I = I₀ cos²(φ/2)
+- I(x) = 2I₀(1 + cos(2πδ/λ))  or
+- I(x) = 2I₀(1 + cos(2πx/i))
 
 where:
 
-- I is the observed intensity
-- I₀ is the maximum intensity
-- φ is the phase difference between the two waves
-
-The phase difference depends on:
-
-- wavelength (λ)
-- slit separation (d)
-- observation angle (θ)
+- I is the observed intensity (W/m^2)
+- I₀ is the maximum intensity (W/m^2)
+- λ is wavelength (nm)
+- δ is optical path difference
+- i is fringe spacing (mm)
+- x is position on screen (cm)
+- D is distance from slits to screen (m)
+- a is slit separation (mm)
+  
+with 
+- δ=ax/D and
+- i=λD/a
 
 ## Objectives
 
