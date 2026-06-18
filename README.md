@@ -45,12 +45,15 @@ with
 
 ## Results
 
-The program generates the interference intensity profile observed on the screen.
+The program generates two visualizations:
 
-Example output:
+**1. Intensity Distribution**
+Shows I(x) as a function of position on the screen, with peaks (bright fringes) and zeros (dark fringes).
 
-- Bright fringes (constructive interference)
-- Dark fringes (destructive interference)
+**2. Interference Fringes**
+Visual representation of the fringe pattern on the observation screen.
+
+![Interference Pattern](interference_pattern.png)
 
 ## Future Improvements
 
