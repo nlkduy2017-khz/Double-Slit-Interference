@@ -2,7 +2,9 @@
 
 ## Overview
 
-This project simulates the interference pattern produced by the classical Young's double-slit experiment using Python. The objective is to visualize how the intensity distribution on a screen depends on the phase difference between two coherent light sources.
+This project simulates the interference pattern produced by the classical Young's double-slit experiment using Python. 
+
+The objective is to visualize how the intensity distribution on a screen depends on the phase difference between two coherent light sources.
 
 The simulation is based on wave optics and demonstrates one of the fundamental experiments that reveal the wave nature of light.
 
